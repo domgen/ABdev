@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABdev Experiment</title>
+</head>
+
+<body style="width: 270px;color:#000;font-family:Arial;font-size:14px;padding:5px;margin:0px auto;outline:0px;background-color:#efefef!important;">
+    <div class="tabtitle">
+        <b>ABdev</b> Experiment
+    </div>
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+    <div class="clearfix"></div>
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+
+    <style type="text/css">
+        * {
+            font-size: 14px!important;
+            color: #78b7e0;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        .tabtitle b {
+            color: #00548c;
+        }
+        
+        .tabtitle {
+            font-size: 15px;
+            font-weight: bold;
+            color: #78b7e0;
+            line-height: 22px;
+            margin: 0 auto;
+            letter-spacing: 1px;
+            padding-bottom: 0px;
+            float: left;
+            padding: 6px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .onoffswitch {
+            float: right;
+            position: relative;
+            width: 90px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .onoffswitch-checkbox {
+            display: none;
+        }
+        
+        .onoffswitch-label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #00548c;
+            border-radius: 20px;
+        }
+        
+        .onoffswitch-inner {
+            display: block;
+            width: 200%;
+            margin-left: -100%;
+        }
+        
+        .onoffswitch-inner:before,
+        .onoffswitch-inner:after {
+            display: block;
+            float: left;
+            width: 50%;
+            height: 30px;
+            padding: 0;
+            line-height: 30px;
+            font-size: 14px;
+            color: white;
+            font-family: Trebuchet, Arial, sans-serif;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        
+        .onoffswitch-inner:before {
+            content: "ON";
+            padding-left: 10px;
+            background-color: #fff;
+            color: #00548c;
+        }
+        
+        .onoffswitch-inner:after {
+            content: "OFF";
+            padding-right: 10px;
+            background-color: #fff;
+            color: #00548c;
+            text-align: right;
+        }
+        
+        .onoffswitch-switch {
+            display: block;
+            width: 18px;
+            margin: 6px;
+            background-color: #78b7e0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 56px;
+            border: 2px solid #00548c;
+            border-radius: 20px;
+        }
+        
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+            right: 0px;
+        }
+    </style>
+
+</body>
+
+</html>

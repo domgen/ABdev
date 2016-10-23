@@ -1,0 +1,51 @@
+{
+  "name": "abdev",
+  "version": "1.0.0",
+  "description": "ABdev - A/B testing development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilcuRob/ABdev.git"
+  },
+  "keywords": [
+    "abdev",
+    "ab test",
+    "multivariate testing",
+    "testing",
+    "optimizely",
+    "a/b test development",
+    "abtasty",
+    "cro",
+    "vwo",
+    "split testing",
+    "chrome extension a/b testing",
+    "javascript a/b test"
+  ],
+  "author": "Vilcu Robert <github.com/vilcuRob>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vilcuRob/ABdev/issues"
+  },
+  "homepage": "https://github.com/vilcuRob/ABdev#readme",
+  "devDependencies": {
+    "browserify": "*",
+    "file-system": "*",
+    "fs": "*",
+    "graceful-fs": "*",
+    "gulp": "*",
+    "gulp-cssmin": "*",
+    "gulp-less": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-uglify": "*",
+    "jquery": "*",
+    "path": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*",
+    "yargs": "*"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "ABdev",
+    "description": "ABdev - A/B testing development",
+    "version": "3.1.5",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app/js/vendor/jquery.min.js","app/js/core.js"],
+            "run_at": "document_start"
+    }
+  ],
+    "browser_action": {
+        "default_icon": "app/icon.png",
+        "default_title": "ABdev - A/B testing development",
+        "default_popup": "app/extension.html"
+    },
+    "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "cookies"
+  ],
+    "web_accessible_resources": [
+    "app/dist/experiment.mixed.min.js",
+    "app/js/vendor/jquery.min.js"
+  ]
+}
