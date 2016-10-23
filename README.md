@@ -43,8 +43,7 @@ Next click on the "Load unpacked extension.." and choose the "ABdev_extension" f
 > Now you should see the extension installed in your browser. Go to the page that you wish to create an split test, a/b test or multivariate test and click on the extension's icon. Now toggle the "ON" button inside the extension's popup and you should be able to see your a/b test in action if you managed to create a new extension first using gulp --new my-experiment-folder-name. 
 
 ===================
-#### How it works
-The structure of ABdev is the following:
+#### Directory structure explained
 
  * **-ABdev-extension**
      * **-app** (holds the chrome extension core functionality)
@@ -68,6 +67,20 @@ The structure of ABdev is the following:
 
 - When you run, for example: "gulp --new homepage-redesign-page", gulp will create a folder called "homepage-redesign-page" inside **ABdev-extension/experiments** with a js and a less css file inside. Each time you save those files or any files included inside - gulp will run a task that will minify everything and generate one file called **experiment.mixed.min.js** located in **ABdev-extension/app/dist/**. If your chrome browser is opened and the extension is set to run on a particular page, then you should see the results instantly after a page refresh.
 - If you run "gulp --start homepage-old" assuming that homepage-old is an experiment that was already existing, then GULP will still watch for any changes in that experiment and will also run a task that will build the experiment mixed file so you can see it in your browser instantly after a page refresh.
+
+===================
+#### Examples
+```sh
+$ gulp --start background-experiment
+```
+> **Tip:**
+> Go on google.com and start ABdev chrome extension after running the gulp --start command. You should see a the white background changing with one different wallpaper each time you refresh your page.
+
+```sh
+$ gulp --start github-dark-theme
+```
+> **Tip:**
+> Go on https://github.com/vilcuRob/ABdev and start ABdev chrome extension after running the gulp --start command. You should see the entire UI chaning to a dark-blue theme. Navigating to a different URL will remove the dark-theme and default to the initial github theme.
 
 ===================
 #### How to use in production
