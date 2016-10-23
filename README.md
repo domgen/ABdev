@@ -1,4 +1,4 @@
-ABdev - Quickest way to develop A/B tests 
+ABdev - The quickest way to develop A/B tests 
 ===================
 ABdev is a tool that helps developers create and maintain a/b tests. Its super easy to get started and learn to use it. ABdev uses javascript & less css and with some help from GULP (node.js) compiles everything to a single .js file and also uses a build-in Chrome Extension that lets you preview everything instantly on any live website.
 
