@@ -1,11 +1,11 @@
 <img src="https://raw.githubusercontent.com/vilcuRob/ABdev/master/ABdev_extension/app/icon.png" width="48">
 
-ABdev - The quickest way to develop A/B tests 
+ABdev - The quickest way to develop A/B tests for the web using modular javascript and less css
 ===================
 ABdev is a tool that helps developers create and maintain a/b tests. Its super easy to get started and learn to use it. ABdev uses javascript & less css and with some help from GULP (node.js) compiles everything to a single .js file and also uses a build-in Chrome Extension that lets you preview everything instantly on any live website.
 
-ABdev answers to this questions:
-* How can you build a/b testing variations faster
+#### ABdev answers to this questions:
+* How can you build a/b testing variations faster and more robust using your favorite editor
 * What other ways of creating complex a/b tests and beeing able to maintain them in the future
 * How to scale a/b testings or how to build complicated tests using reusable code from modern build tools
 * What are some better ways of coding javascript and css a/b tests without using the browser's console
@@ -75,7 +75,7 @@ The structure of ABdev is the following:
 $ gulp --start my-experiment-folder-name
 ```
 > **Note:**
-> Use this command to generate the latest build for your experiment. After that, simply navigate to the "dist" folder and use which files works best for you. For example in optimizely you could add the css and js separetly but with other tools you might not be able to add separate css. So just use the mixed.js file.
+> Use this command to generate the latest build for your experiment. After that, simply navigate to the **"ABdev-extension/app/dist/"** folder and use which files works best for you. For example in optimizely you could add the css and js separetly but with other tools you might not be able to add separate css. So just use the mixed.js file that also contains your minified css.
 
 ===================
 #### Dependencies
