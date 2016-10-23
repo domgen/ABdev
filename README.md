@@ -78,7 +78,3 @@ $ gulp --start my-experiment-folder-name
 ===================
 #### Any questions?
 If you have any questions about ABdev, feel free to contact me at: robert@crafton.ro
-```
-
-
-
