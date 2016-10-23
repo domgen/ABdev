@@ -17,7 +17,7 @@ ABdev answers to this questions:
 Make sure you have node.js and npm installed first
 ```sh
 $ git clone https://github.com/vilcuRob/ABdev.git
-$ npm install -d
+$ npm install
 ```
 ===================
 #### Create a new experiment
