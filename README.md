@@ -60,7 +60,7 @@ The structure of ABdev is the following:
 - If you run "gulp --start homepage-old" assuming that homepage-old is an experiment that was already existing, then GULP will still watch for any changes in that experiment and will also run a task that will build the experiment mixed file so you can see it in your browser instantly after a page refresh.
 
 ===================
-#### How to deploy
+#### How to use in production
 ```sh
 $ gulp --start my-experiment-folder-name
 ```
