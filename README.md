@@ -6,11 +6,9 @@ ABdev - The quickest way to develop A/B tests for the web using modular javascri
 
 ABdev is a tool that helps developers create and maintain a/b tests. Its super easy to get started and learn to use it. ABdev uses javascript & less css and with some help from GULP (node.js) compiles everything to a single .js file and also uses a built-in Chrome Extension that lets you preview everything instantly on any live website.
 
-===================
 
 <img src="https://raw.githubusercontent.com/vilcuRob/ABdev/master/ABdev_extension/app/abdev.gif" width="100%">
 
-===================
 
 #### ABdev answers to this questions:
 * How can you build a/b testing variations faster and more robust using your favorite editor
