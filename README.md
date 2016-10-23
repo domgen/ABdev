@@ -78,5 +78,25 @@ $ gulp --start my-experiment-folder-name
 > Use this command to generate the latest build for your experiment. After that, simply navigate to the "dist" folder and use which files works best for you. For example in optimizely you could add the css and js separetly but with other tools you might not be able to add separate css. So just use the mixed.js file.
 
 ===================
+#### Dependencies
+```sh
+"browserify": "*",
+"file-system": "*",
+"fs": "*",
+"graceful-fs": "*",
+"gulp": "*",
+"gulp-cssmin": "*",
+"gulp-less": "*",
+"gulp-plumber": "*",
+"gulp-rename": "*",
+"gulp-replace": "*",
+"gulp-uglify": "*",
+"jquery": "*",
+"path": "*",
+"vinyl-buffer": "*",
+"vinyl-source-stream": "*",
+"yargs": "*"
+```
+===================
 #### Any questions?
 If you have any questions about ABdev, feel free to contact me at: robert@crafton.ro
