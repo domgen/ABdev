@@ -43,10 +43,10 @@ $ gulp --start my-experiment-folder-name
 
 ===================
 #### Install the chrome extension
-Open Google Chrome, go to menu, more tools, extensions and check the "Developer mode" radio box from the top of the page.
-Next click on the "Load unpacked extension.." and choose the "ABdev_extension" folder from this repository.
+Open Google Chrome, go to menu, more tools, extensions, and check the "Developer mode" radio box from the top of the page.
+Next, click on the "Load unpacked extension.." and choose the "ABdev_extension" folder from this repository.
 > **Note:**
-> Now you should see the extension installed in your browser. Go to the page that you wish to create an split test, a/b test or multivariate test and click on the extension's icon. Now toggle the "ON" button inside the extension's popup and you should be able to see your a/b test in action if you managed to create a new extension first using gulp --new my-experiment-folder-name. 
+> Now you should see the extension installed in your browser. Go to the page that you wish to create an split test, a/b test or multivariate test and click on the extension's icon. A cookie called  Now toggle the "ON" button inside the extension's popup and you should be able to see your a/b test in action if you managed to create a new extension first using gulp --new my-experiment-folder-name. 
 
 ===================
 #### Directory structure explained
