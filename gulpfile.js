@@ -2,14 +2,12 @@ var path = require('path'),
     args = require('yargs').argv,
     fs = require('file-system'),
     gulp = require('gulp'),
-    plumber = require('gulp-plumber'),
-    uglify = require('gulp-uglify'),
     less = require('gulp-less'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     replace = require('gulp-replace'),
-    browserify = require('browserify')
-    source = require('vinyl-source-stream')
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer');
 
 var experimentName = '';
@@ -59,7 +57,6 @@ var paths = {
 // Compile less files 
 gulp.task('styles', function () {
     return gulp.src(paths.src.less + '*.less')
-        .pipe(plumber())
         .pipe(less({
             paths: [path.join(__dirname, 'less', 'includes')]
         }))
@@ -90,7 +87,6 @@ gulp.task('scripts', function () {
             suffix: '.min'
         }))
         .pipe(buffer())
-        .pipe(uglify())
         .pipe(gulp.dest(paths.dist));
 });
 
