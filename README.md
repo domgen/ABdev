@@ -80,13 +80,13 @@ Next, click on the "Load unpacked extension.." and choose the "ABdev_extension" 
 $ gulp --start background-experiment
 ```
 > **Tip:**
-> Navigate to https://google.com and start ABdev chrome extension after running the gulp --start command. You should see a the white background changing with one different wallpaper each time you refresh your page.
+> Navigate to https://google.com and start ABdev chrome extension after running the gulp --start command. You should see the white background changing to one different image each time you refresh the page.
 
 ```sh
 $ gulp --start github-dark-theme
 ```
 > **Tip:**
-> Navigate to https://github.com/vilcuRob/ABdev and start ABdev chrome extension after running the gulp --start command. You should see the entire UI chaning to a dark-blue theme. Navigating to a different URL will remove the dark-theme and default to the initial github theme.
+> Navigate to https://github.com/vilcuRob/ABdev and start ABdev chrome extension after running the gulp --start command. You should see the entire UI changing to a dark-blue theme. Navigating to a different URL will remove the dark-theme and will default to the initial github theme.
 
 ===================
 #### How to use in production
