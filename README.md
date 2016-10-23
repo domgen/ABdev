@@ -80,22 +80,18 @@ $ gulp --start my-experiment-folder-name
 ===================
 #### Dependencies
 ```sh
-"browserify": "*",
-"file-system": "*",
-"fs": "*",
-"graceful-fs": "*",
-"gulp": "*",
-"gulp-cssmin": "*",
-"gulp-less": "*",
-"gulp-plumber": "*",
-"gulp-rename": "*",
-"gulp-replace": "*",
-"gulp-uglify": "*",
-"jquery": "*",
-"path": "*",
-"vinyl-buffer": "*",
-"vinyl-source-stream": "*",
-"yargs": "*"
+"browserify": "^13.1.1",
+"file-system": "^2.2.1",
+"gulp": "^3.9.1",
+"gulp-cssmin": "^0.1.7",
+"gulp-less": "^3.1.0",
+"gulp-rename": "^1.2.2",
+"gulp-replace": "^0.5.4",
+"jquery": "^3.1.1",
+"path": "^0.12.7",
+"vinyl-buffer": "^1.0.0",
+"vinyl-source-stream": "^1.1.0",
+"yargs": "^6.3.0"
 ```
 ===================
 #### Any questions?
