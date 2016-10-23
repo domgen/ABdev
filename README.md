@@ -43,7 +43,7 @@ $ gulp --start my-experiment-folder-name
 
 ===================
 #### Install the chrome extension
-Open Google Chrome, go to menu, more tools, extensions, and check the "Developer mode" radio box from the top of the page.
+Open your Google Chrome browser, go to menu, more tools, extensions, and check the "Developer mode" radio box from the top of the page.
 Next, click on the "Load unpacked extension.." and choose the "ABdev_extension" folder from this repository.
 > **Note:**
 > Now you should see the extension installed in your browser. Go to the page that you wish to create an split test, a/b test or multivariate test and click on the extension's icon. Now toggle the "ON" button inside the extension's popup. A cookie called "abdev_experiment='on'" will be added to the website in the active tab of your browser. You should now be able to preview your current experiment.
@@ -80,13 +80,13 @@ Next, click on the "Load unpacked extension.." and choose the "ABdev_extension" 
 $ gulp --start background-experiment
 ```
 > **Tip:**
-> Go on google.com and start ABdev chrome extension after running the gulp --start command. You should see a the white background changing with one different wallpaper each time you refresh your page.
+> Navigate to https://google.com and start ABdev chrome extension after running the gulp --start command. You should see a the white background changing with one different wallpaper each time you refresh your page.
 
 ```sh
 $ gulp --start github-dark-theme
 ```
 > **Tip:**
-> Go on https://github.com/vilcuRob/ABdev and start ABdev chrome extension after running the gulp --start command. You should see the entire UI chaning to a dark-blue theme. Navigating to a different URL will remove the dark-theme and default to the initial github theme.
+> Navigate to https://github.com/vilcuRob/ABdev and start ABdev chrome extension after running the gulp --start command. You should see the entire UI chaning to a dark-blue theme. Navigating to a different URL will remove the dark-theme and default to the initial github theme.
 
 ===================
 #### How to use in production
