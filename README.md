@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/vilcuRob/ABdev/master/ABdev_extension/app/icon.png" width="48">
 
-ABdev - The quickest way to develop A/B tests for the web using modular javascript and css (less).
+ABdev - The quickest way to develop A/B tests using modular javascript and css (less).
 ===================
 
 
