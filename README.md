@@ -25,7 +25,7 @@ $ npm install -d
 $ gulp --new my-experiment-folder-name
 ```
 > **Note:**
-> Make sure that the name of the experiment does not contain spaces or other characters that would normaly fail when trying to create a new folder with that name. 
+> Make sure that the name of the experiment does not contain spaces or other characters that would normaly fail when trying to create a new folder. 
 
 ===================
 #### Run existing experiment
