@@ -6,6 +6,7 @@ var path = require('path'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     replace = require('gulp-replace'),
+    uglify  = require('gulp-uglify'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer');
@@ -87,6 +88,7 @@ gulp.task('scripts', function () {
             suffix: '.min'
         }))
         .pipe(buffer())
+        .pipe(uglify())
         .pipe(gulp.dest(paths.dist));
 });
 
