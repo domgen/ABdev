@@ -9,7 +9,9 @@ var path = require('path'),
     uglify  = require('gulp-uglify'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
-    buffer = require('vinyl-buffer');
+    buffer = require('vinyl-buffer'),
+    babelify = require("babelify"),
+    serve = require('gulp-serve');
 
 var experimentName = '';
 var reStarted = false;
@@ -47,6 +49,11 @@ if (!fs.existsSync('./ABdev_extension/experiments/' + args.start)) {
 
 console.log('Experiment '+experimentName+' is now up and running!');
 
+gulp.task('serve', serve({
+  root: ['./ABdev_extension/experiments/' + experimentName],
+  port: 8000
+}));
+
 var paths = {
     src: {
         less: './ABdev_extension/experiments/' + experimentName + '/less/',
@@ -59,7 +66,7 @@ var paths = {
 gulp.task('styles', function () {
     return gulp.src(paths.src.less + '*.less')
         .pipe(less({
-            paths: [path.join(__dirname, 'less', 'includes')]
+            paths: [path.join(__dirname, 'less', 'includes', 'components')]
         }))
         .pipe(cssmin().on('error', function (err) {
             console.log(err);
@@ -82,7 +89,7 @@ gulp.task('scripts', function () {
         entries: [paths.src.js + 'experiment.js'],
         paths: ['./node_modules', paths.src.js]
     });
-    return b.bundle()
+    return b.transform("babelify", {presets: ["es2015"]}).bundle()
         .pipe(source('experiment.js'))
         .pipe(rename({
             suffix: '.min'
@@ -118,7 +125,7 @@ gulp.task('watch', function () {
 });
 
 // Run default gulp tasks
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch','serve']);
 if (reStarted) {
     gulp.start('styles', 'scripts', 'mix');
 }
