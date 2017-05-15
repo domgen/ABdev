@@ -29,6 +29,10 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+ABdev_extension/experiments/**
+ABdev_extension/app/dist/**
+!ABdev_extension/experiments/background-experiment
+!ABdev_extension/experiments/github-dark-theme
 
 # Optional npm cache directory
 .npm
