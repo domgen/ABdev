@@ -42,3 +42,7 @@ ABdev_extension/app/dist/**
 
 # Dist folder
 app/dist
+
+# OS generated files
+.DS_Store
+ABdev_extension/.DS_Store
